@@ -1,0 +1,32 @@
+public class Hospital
+{
+
+    public static void main(String[] args)
+    {
+        HospitalEmployee tim = new HospitalEmployee("tim", 123);
+        Doctor jon = new Doctor("jon", 234, "Heart");
+        Surgeon sim = new Surgeon("sim", 645, "Brain", true);
+        Nurse kim = new Nurse("kim", 789, 6);
+        Administrator luca = new Administrator("luca", 375, "Business");
+        Receptionist modric = new Receptionist("modric", 951, "Talking", true);
+        Cleaner andrew = new Cleaner("andrew", 123, "Maintenence", false);
+
+        // print the employees
+        System.out.println(tim);
+        System.out.println(jon);
+        System.out.println(sim);
+        System.out.println(kim);
+        System.out.println(luca);
+        System.out.println(modric);
+        System.out.println(andrew);
+
+        // invoke the specific methods of the objects
+        tim.work();
+        jon.diagnose();
+        sim.operate();
+        kim.assist();
+        luca.administrate();
+        modric.answer();
+        andrew.sweep();
+    }
+}
